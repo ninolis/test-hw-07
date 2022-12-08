@@ -65,12 +65,12 @@ function modalImageZoom(event) {
     return;
   }
 
-  let instance = basicLightbox.create(`
- <img
-      class="gallery__image"
-      src="${event.target.getAttribute(`data-source`)}"
-      alt="${event.target.alt}"
-    />
+  const instance = basicLightbox.create(`
+<img
+class="gallery__image"
+src="${event.target.getAttribute(`data-source`)}"
+alt="${event.target.alt}"
+/>
 `);
   instance.show();
   if (instance.visible()) {
